@@ -8,8 +8,9 @@ function onReady() {
   if (!newToDoText.value) { return; }
   toDos.push({
   title: newToDoText.value,
-  complete: false
+  complete: false,
   });
+
 
   newToDoText.value = '';
 
@@ -31,7 +32,6 @@ function onReady() {
          toDoList.appendChild(newLi);
          newLi.appendChild(checkbox);
        });
-
      }
 
   addToDoForm.addEventListener('submit', event => {
